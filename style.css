@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    color: #283618;
+    background-color: #FEFAE0;
+}
+
+:focus-visible {
+    outline: 3px solid #DDA15E;
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+.hero-section {
+    height: 100vh;
+    position: relative;
+    background-image: url('ARAUCARIA.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 54, 24, 0.65);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #FEFAE0;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEFAE0;
+}
+
+.scroll-indicator span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.scroll-indicator .arrow-icon {
+    fill: #DDA15E;
+    width: 32px;
+    height: 32px;
+}
+
+main {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    gap: 5%;
+    align-items: flex-start;
+}
+
+.content-wrapper {
+    width: 65%;
+    max-width: 850px;
+    flex-shrink: 0;
+}
+
+.sticky-aside {
+    width: 30%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+}
+
+.pine-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+}
+
+.pine-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pine-section h2 span {
+    color: #606C38;
+}
+
+.pine-section .intro-paragraph {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.pine-section h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #DDA15E;
+    padding-bottom: 5px;
+    color: #582F0E;
+}
+
+.pine-section p, .pine-section li {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.eco-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.eco-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.eco-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #606C38;
+    font-weight: bold;
+}
+
+.card-section {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.card {
+    flex: 1;
+    background-color: #faf8f0;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0ddd1;
+}
+
+.card h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #283618;
+}
+
+.cycle-section {
+    margin-bottom: 50px;
+}
+
+.cycle-section h3 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #582F0E;
+}
+
+.cycle-steps {
+    display: flex;
+    gap: 20px;
+}
+
+.step {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f6f0;
+}
+
+.step-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #DDA15E;
+    margin-right: 20px;
+    line-height: 1;
+}
+
+.step-content h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #283618;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.legend-section {
+    margin-top: 40px;
+}
+
+.legend-section h3 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #582F0E;
+}
+
+blockquote {
+    border-left: 5px solid #DDA15E;
+    padding-left: 30px;
+    margin: 0 20px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: right;
+    font-style: normal;
+    color: #283618;
+}
+
+#gralha-div {
+    text-align: center;
+}
+
+#gralha-azul {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+#scroll-link {
+    text-decoration: none;
+}
+
+.site-footer {
+    background-color: #283618;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScrollIndicator {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes bounceArrow {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-12px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-6px);
+    }
+}
+
+@keyframes contentFadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-section {
+        background-attachment: fixed;
+    }
+    .hero-content {
+        animation: fadeInSlideUp 1.5s ease-out forwards;
+    }
+    .scroll-indicator {
+        opacity: 0;
+        animation: fadeInScrollIndicator 1.5s ease-out 1s forwards, bounceArrow 2s infinite 2.5s;
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+    #gralha-azul {
+        transition: transform 0.3s ease;
+    }
+    #gralha-azul:hover {
+        transform: scale(1.03);
+    }
+    .step {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .step:hover {
+        background-color: #ffffff;
+        transform: scale(1.02);
+    }
+    .cycle-section, .legend-section {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: contentFadeInUp 1s ease-out forwards;
+        animation-timeline: view();
+        animation-range-start: entry 10%;
+        animation-range-end: cover 20%;
+    }
+    .legend-section {
+        animation-delay: 0.2s;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        gap: 40px;
+    }
+    .content-wrapper {
+        flex: 1.8;
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    .content-wrapper, .sticky-aside {
+        width: 100%;
+        max-width: 700px;
+    }
+    .sticky-aside {
+        position: static;
+        margin-top: 40px;
+    }
+    .cycle-steps {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-section {
+        flex-direction: column;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+    .pine-section {
+        padding: 25px;
+    }
+    .pine-section h2 {
+        font-size: 2rem;
+    }
+    .pine-section h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+}
