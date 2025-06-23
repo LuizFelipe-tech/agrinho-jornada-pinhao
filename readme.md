@@ -35,10 +35,10 @@ Todas as imagens utilizadas neste projeto são 100% autorais, conforme o requisi
     * **Ferramenta/Técnica:** Fotografia com iPhone 12 Pro.
 
 * **Imagem da Gralha-Azul:**
-    * **Autor:** [Seu Nome Completo]
-    * **Ferramenta/Técnica:** [Preencha aqui como você criou a imagem. Ex: Ilustração digital no Krita]
-
-*(**Importante:** Preencha esta seção com os detalhes de como você criou a imagem da Gralha-Azul!)*
+    * **Autor:** [NÃO DISPONÍVEL]
+    * **Ferramenta/Técnica:** ANIMALIA.BIO
+    PERMISSÃO DE CREATIVE COMMONS CONCEDIDA À TODOS, CONFORME METADADOS DA IMAGEM NO LINK ORIGINAL
+    * **LINK ORIGINAL:**: https://animalia.bio/pt/azure-jay
 
 ## 📋 Análise de Funcionalidades
 
